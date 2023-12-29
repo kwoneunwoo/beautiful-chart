@@ -14,7 +14,7 @@ def get_space(text: str, space: int) -> int:
     
     r_width = space - text_width
     if r_width < 0:
-        raise Exception('too short space')
+        raise Exception(f'too short space. you needs more than {text_width}')
 
     return r_width
 
